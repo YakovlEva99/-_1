@@ -5,9 +5,7 @@
 a{
     text-decoration: none;
 }
-li{
-    list-style: none;
-}
+
 body{
 position: relative;
 width: 100%;
@@ -17,13 +15,15 @@ background: #FFFFFF;
 
     
 }
-header{
+.header__h{
 position: absolute;
 width: 100%;
 height: 100px;
 left: 0px;
 top: 0px;
 background: rgba(16, 16, 29, 0.9);
+z-index: 1;
+
     
 }
 .header__logo {
@@ -42,6 +42,7 @@ display: flex;
 align-items: center;
 text-transform: uppercase;
 color: #FFFFFF;
+
 }
 .header__logo b{
     color:  #42A9ED;
@@ -78,4 +79,134 @@ top: 44.5px;
     text-transform: uppercase;
     
     color: #43ABF0;
+}
+.main__bg{
+position: absolute;
+width: 100%;
+height: 850px;
+left: 0px;
+top: 0px;
+
+background: #000000;
+
+}
+.main__bg_img{
+position: absolute;
+width: 100%;
+height: 987px;
+left: 0px;
+top: 0px;
+
+background: url(img/Слой_9.png)  no-repeat;
+}
+.main__text{
+    position: absolute;
+width: 780px;
+height: 444px;
+left: 375px;
+top: 203px;
+}
+.main__text h1{
+    position: absolute;
+
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 45px;
+line-height: 58px;
+text-transform: uppercase;
+
+color: #3E9CDC;
+}
+.main__text b{
+    color: #000000;
+}
+.main__text_list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 534px;
+    height: 116px;
+    left: 0px;
+    top: 180px;
+}
+.main__text_list p{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+.main__text_list_ul{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 5px;
+
+width: 481.94px;
+height: 82px;
+}
+
+.main__text_list_ul li{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+display: list-item;
+list-style-position: inside;
+
+list-style-image: url(img/-.png);
+
+align-items: center;
+color: #000000;
+
+
+
+}
+form{
+
+width: 396px;
+height: 43px;
+left: 376px;
+
+padding-top: 80px;
+}
+
+.favorite_button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 15px 10px;
+gap: 10px;
+
+position: inherit;
+display: inline-block;
+width: 183px;
+height: 43px;
+
+
+background: #FFFFFF;
+border: 1px solid #6F6D7B;
+border-radius: 4px;
+}
+
+.favorite_button:hover{
+    background: #3E9CDC;
+border: 1px solid #FFFFFF;
+border-radius: 4px;
 }
