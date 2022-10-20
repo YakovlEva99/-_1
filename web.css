@@ -248,8 +248,42 @@ background: #3D4050;
     margin-right: 0;
     z-index: 1;
 }
+.lol{
+position: relative;
+width: 1172px;
+height: 647.81px;
+top:100px;
+left:16%;
+
+}
+
+.main__team{
+    position: absolute;
+    width: 1168px;
+    height: 338.37px;
+    align-items: center;
+    justify-content: center;
+    
+    }
+.main__wrapper{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 30px;
+
+
+
+height: 94px;
+
+
+}
+.main__wrapper strong{
+    color: #3E9CDC;
+}
 .main__wrapper p{
-    width: 555px;
+width: 555px;
 height: 24px;
 
 font-family: 'Lato';
@@ -278,5 +312,90 @@ align-items: center;
 text-transform: uppercase;
 
 color: #FFFFFF;
+
+}
+.content{
+     top:150px;
+    width: 1168px;
+    height: 164.37px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    position: absolute;
+    
+}
+
+.services__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    position: relative;
+    width: 209px;
+    height: 164.37px;
+    
+    
+
+
+
+
+}
+
+
+.services__card_img{
+    position: absolute;
+    width: 100px;
+height: 100px;
+}
+
+
+
+services__card_img h1{
+    width: 188px;
+    height: 44.37px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    position: absolute;
+    color: #FFFFFF;
+    
+}
+.form{
+
+width: 1172px;
+height: 229.44px;
+left: 20%;
+top: 1388.37px;
+box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+}
+.email .text .list1{ 
+    
+    
+    
+    position: absolute;
+    width: 370px;
+    height: 48px;
+    
+    
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
 
 }
