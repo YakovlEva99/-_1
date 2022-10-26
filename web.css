@@ -194,7 +194,7 @@ color: #000000;
 
 
 }
-form{
+.main__button > form{
 
 width: 396px;
 height: 43px;
@@ -382,52 +382,109 @@ top: 1388.37px;
 
     /* Auto layout */
     
+   
+}
+.tea p{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px;
     gap: 5px;
-}
+    box-sizing: border-box;
+    
+    
+    
+    position: absolute;
+    width: 370px;
+    height: 48px;
+    
+    
+    
+    }
 
-input[type=email], input[type=text], select{
+input[type=text]{
     box-sizing: border-box;
 
 /* Auto layout */
 
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 5px;
 
 position: absolute;
 width: 370px;
 height: 48px;
 
 
+
 background: rgba(255, 255, 255, 0.85);
 border: 1px solid #FFFFFF;
 border-radius: 3px;
-box-sizing: border-box;
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    gap: 5px;
+   
     
 }
-.tea p{
-    width: 370px;
-height: 48px;
+
+input[type=email] {
+    box-sizing: border-box;
+
+/* Auto layout */
+
 display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    gap: 5px;
-}
-input[type=range]{
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 5px;
+
 position: absolute;
-width: 1169.5px;
-height: 63.44px;
-left: 16%;
-top: 130.37px;}
+width: 370px;
+height: 48px;
+left: 34%;
+
+
+background: rgba(255, 255, 255, 0.85);
+border: 1px solid #FFFFFF;
+border-radius: 3px;
+}
+select{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 5px;
+
+position: absolute;
+width: 370px;
+height: 48px;
+left: 68%;
+
+
+background: rgba(255, 255, 255, 0.85);
+border: 1px solid #FFFFFF;
+border-radius: 3px;
+}
+
+
+
+input[type=range]{
+    position: absolute;
+    left: 0.45%;
+    right: 0.45%;
+    
+    bottom: 26.92%;
+    
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #FFFFFF;
+    width: 777px;
+height: 13px;
+}
+
+
 input[type=file]
 {
     box-sizing: border-box;
@@ -444,8 +501,8 @@ gap: 10px;
 position: absolute;
 width: 370px;
 height: 48px;
-left: 1173.5px;
-top: 1466.37px;
+left: 68%;
+
 
 background: #FFFFFF;
 border: 2px solid #3E9CDC;
@@ -469,11 +526,55 @@ gap: 10px;
 position: absolute;
 width: 370px;
 height: 48px;
-left: 50%;
-top: 250.81px;
+left: 35%;
+top: 250px;
 
 background: #3E9CDC;
 border: 1px solid #FFFFFF;
 border-radius: 4px;
 }
+.range{
+    position: absolute;
+width: 1169.5px;
+height: 63.44px;
 
+top: 50%;
+
+}
+.range p{
+   
+
+gap: 10px;
+
+
+
+
+    width: 720.39px;
+height: 22px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+footer{
+    position: absolute;
+    width: 1920px;
+    height: 80px;
+    left: 0px;
+    bottom: 0px;
+    
+    background: #3D4050;
+}
