@@ -25,6 +25,7 @@
 
 </header>  
 <main>
+    <div class="wrapper">
     <div class="main__bg">
     <div class="main__bg_img">
         <div class="main__text">
@@ -52,7 +53,9 @@
     
 </div>
 </div>
+</div>
 <div class="main__dom">
+    <div class="wrapper">
     <div class="main__dom_img">
         <div class="lol">
             <div class="main__team">
@@ -114,6 +117,7 @@
 </div>
 </div>
 
+
     
     <form method="post" enctype="multipart/form-data"   class = "tea">
                 
@@ -130,22 +134,9 @@
     <input type="text" placeholder="Выберите ваше имя">
     <fieldset class="range">
         <p>Sed ut perspiciatis, unde omnis iste natus</p>
-        <input id="range" type="range" min="0%" max="100%" value="0%" list="tickmarks"
-        list="rangeList" >
-        <datalist id="tickmarks">
-            <option value="0" >
-            <option value="10">
-            <option value="20%">
-            <option value="30" >
-            <option value="40" >
-            <option value="50" >
-            <option value="60">
-            <option value="70">
-            <option value="75" >
-            <option value="80">
-            <option value="90">
-            <option value="100" >
-            </datalist>
+        <div id="dataScroll">75%</div>
+        <input id="id_range" type="range" min="0%" max="100%" step="1" value="75" oninput="fun()">
+        
             
 
 
@@ -162,18 +153,27 @@
 </form>
 </div>
 </div>
-
+</div>
 
 
 <footer>
+    <div class="wrapper">
+        <div class="contacts">
     <p><a href="#">© 2018 «LoremIpsum.net» Все права защищены.</a></p>
     <p><a href="sample.html"><img src="img/Frame 21.png"  alt="Пример">Qiwi wallet</a></p>
     <p><a href="sample.html"><img src="img/Frame 21.png"  alt="Пример">Qiwi wallet</a></p>
     <p><a href="sample.html"><img src="img/Frame 21.png"  alt="Пример">Web Money</a></p>
     <p><a href="sample.html"><img src="img/Frame 21.png"  alt="Пример">info@ipsum228.com</a></p>
     <p><a href="sample.html"><img src="img/Frame 21.png"  alt="Пример">Мы вконтакте</a></p>
-    </footer>
+    </div> 
+</div>
+</footer>
 </main>
+<script>
+    function fun() {
+        dataScroll.innerHTML=id_range.value+"%";
+    }
+</script>
 
 
 
